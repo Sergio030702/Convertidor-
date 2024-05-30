@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Convertidor de vídeo a MP3</title>
+  <style>
+      
+      .premium-features {
+  margin-top: 10px;
+}
+
+.premium-features label {
+  display: block;
+  margin-bottom: 5px;
+}
+  </style>
+</head>
+<body>
+  <h1>Convertidor de vídeo a MP3</h1>
+
+  <form action="convert.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="video">
+    <input type="submit" value="Convertir">
+
+    <div class="premium-features">
+      <label for="fast-download">Descarga rápida:</label>
+      <input type="checkbox" name="fast-download" id="fast-download" value="10">
+
+      <label for="multiple-downloads">Descargas múltiples:</label>
+      <input type="checkbox" name="multiple-downloads" id="multiple-downloads" value="10">
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
